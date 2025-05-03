@@ -72,34 +72,12 @@ Armazene a API Key no AWS Secrets Manager e configure o projeto para recuperá-l
      export AWS_SECRET_ACCESS_KEY="SEU_SECRET_ACCESS_KEY"
      ```
 
-### 2. Executar o Projeto
+### 2. 🚀 Executar o Projeto
 Após configurar a API Key, você pode executar o projeto com o Maven:
 ```bash
 mvn compile exec:java -Dexec.mainClass=Principal
 ```
 -----
-
-## 🚀 Como Executar
-
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/lirasusejdev/conversor-de-moedas.git
-   cd conversor-de-moedas
-   ```
-
-2. Compile o projeto:
-   ```bash
-   javac -d bin -sourcepath src src/Principal.java
-   ```
-
-3. Execute o programa:
-   ```bash
-   java -cp bin Principal
-   ```
-
-4. Siga as instruções exibidas no console para realizar as conversões.
-
----
 
 ## 📂 Estrutura do Projeto
 
