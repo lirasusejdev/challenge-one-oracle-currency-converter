@@ -1,3 +1,5 @@
+![Programação-Challenge - Conversor de Moedas](https://github.com/user-attachments/assets/c18b5746-0642-4acd-9faf-298cc5ba3d89)
+
 # 💱 Conversor de Moedas - Challenge
 
 Este é um projeto de um **Conversor de Moedas** desenvolvido em Java. O programa permite realizar conversões de moedas utilizando a API [ExchangeRate-API](https://www.exchangerate-api.com/). Ele oferece uma interface interativa no console para que o usuário possa selecionar opções de conversão e visualizar os resultados.
