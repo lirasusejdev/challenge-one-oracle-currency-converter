@@ -1,4 +1,4 @@
-# 💱 Conversor de Moedas
+# 💱 Conversor de Moedas - Challenge
 
 Este é um projeto de um **Conversor de Moedas** desenvolvido em Java. O programa permite realizar conversões de moedas utilizando a API [ExchangeRate-API](https://www.exchangerate-api.com/). Ele oferece uma interface interativa no console para que o usuário possa selecionar opções de conversão e visualizar os resultados.
 Este projeto faz parte de um desafio do programa ONE ORACLE G8 - CHALLENGE | CONVERSOR DE MOEDAS, sendo como projeto final do curso: "Java e Orientação a Objetos G8 - ONE"
