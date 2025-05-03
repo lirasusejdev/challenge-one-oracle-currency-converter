@@ -1,0 +1,6 @@
+Principal.class
+api\ConsultaApi.class
+service\ConversorDeMoedas.class
+api\ExchangeRateResponse.class
+util\SecretsManagerUtil.class
+model\Moedas.class
