@@ -34,6 +34,51 @@ Antes de executar o projeto, certifique-se de ter:
 
 ---
 
+## Configuração
+
+### 1. Configurar a API Key
+O projeto requer uma API Key válida da [ExchangeRate-API](https://www.exchangerate-api.com/). Você pode configurar a API Key de três maneiras:
+
+#### **Opção 1: Variável de Ambiente**
+Defina a variável de ambiente `CURRENCY_CONVERTER_API_KEY` com sua API Key:
+- **No Windows (PowerShell):**
+  ```powershell
+  $env:CURRENCY_CONVERTER_API_KEY = "SUA_API_KEY"
+  ```
+- **No Linux/Mac:**
+  ```bash
+  export CURRENCY_CONVERTER_API_KEY="SUA_API_KEY"
+  ```
+
+#### **Opção 2: Passar a API Key como Argumento**
+Você pode passar a API Key diretamente ao executar o programa:
+```bash
+mvn exec:java -Dexec.mainClass=Principal -Dexec.args="SUA_API_KEY"
+```
+
+#### **Opção 3: AWS Secrets Manager**
+Armazene a API Key no AWS Secrets Manager e configure o projeto para recuperá-la automaticamente. Siga os passos abaixo:
+1. Crie um segredo no AWS Secrets Manager com o nome `CurrencyConverterApiKey`.
+2. Adicione a API Key como valor do segredo.
+3. Certifique-se de que as credenciais da AWS estão configuradas no ambiente:
+   - **No Windows (PowerShell):**
+     ```powershell
+     $env:AWS_ACCESS_KEY_ID = "SEU_ACCESS_KEY_ID"
+     $env:AWS_SECRET_ACCESS_KEY = "SEU_SECRET_ACCESS_KEY"
+     ```
+   - **No Linux/Mac:**
+     ```bash
+     export AWS_ACCESS_KEY_ID="SEU_ACCESS_KEY_ID"
+     export AWS_SECRET_ACCESS_KEY="SEU_SECRET_ACCESS_KEY"
+     ```
+
+### 2. Executar o Projeto
+Após configurar a API Key, você pode executar o projeto com o Maven:
+```bash
+mvn compile exec:java -Dexec.mainClass=Principal
+```
+-----
+
 ## 🚀 Como Executar
 
 1. Clone este repositório:
@@ -92,6 +137,8 @@ Valor convertido: 567,18 BRL
 - ☕ **Java 17**: Linguagem de programação utilizada.
 - 🌐 **ExchangeRate-API**: API para obter as taxas de câmbio.
 - 📦 **Gson**: Biblioteca para deserialização de JSON.
+-  **Maven** para gerenciar dependências.
+- **AWS SDK** para integração com o AWS Secrets Manager.
 
 ---
 
